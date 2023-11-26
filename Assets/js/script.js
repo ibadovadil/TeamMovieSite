@@ -12,7 +12,7 @@ function Fill(data) {
     result += `
        
                  <div class="card">
-                 <a href="Assets/pages/readMore.html" type="button" class="btn btn-danger genrebtn">Read More  <i class="fa-solid fa-caret-right" style="color: #ffffff;"></i></a>
+                 <a href="./Assets/pages/readMore.html?id=${item.id}" type="button" class="btn btn-danger genrebtn">Read More  <i class="fa-solid fa-caret-right" style="color: #ffffff;"></i></a>
 
                  <div class="cardimg">
                   <img src="${item.image.medium}" alt="">

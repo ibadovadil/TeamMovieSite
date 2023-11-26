@@ -20,8 +20,23 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             readMoreContent.innerHTML = `
-                <h1>${data.name}</h1>
-                <p>${data.summary}</p>
+            
+            <div class="card readmorecard mb-3" style="width: 100% !important; height: 60vh !important;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="${data.image.medium}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">${data.name}</h5>
+                  <p class="card-text"> ${data.summary}</p>
+                  
+                  <p class="card-text"><small class="text-body-secondary">Genres: ${data.genres}</small></p>
+                  <p class="card-text">Rate: ${data.rating.average}</p>
+                </div>
+              </div>
+            </div>
+          </div>
             `;
         })
         .catch(error => {

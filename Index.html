@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
+    <title>Code Academy</title>
     <link rel="stylesheet" href="Assets/Css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -18,138 +19,121 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0"
-                    style="font-family:'Dosis', sans-serif; font-size: 14px; font-weight: bold;">
+                <ul class="navbar-nav mb-2 mb-lg-0 navbar-text">
                     <li class="nav-item px-2">
-                        <a class="nav-link active" style="color: #dcf836" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link active" style="color: #dcf836" aria-current="page" href="./index.html">HOME</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" style="color: #abb7c4" href="#">MOVIES</a>
+                        <a class="nav-link" style="color: #abb7c4" href="./Assets/pages/Movies.html">MOVIES</a>
                     </li>
                     <li class="nav-item px-2 me-2">
                         <a class="nav-link" style="color: #abb7c4" href="#">MY ACCOUNT</a>
                     </li>
                     <li>
-                        <button class="btn" style="background-color: red; border-radius: 10px;">Search</button>
+                        <button class="btn" style="background-color: red; border-radius: 10px; font-weight: bold;">LOGIN</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div id="carouselExampleIndicators" class="carousel slide"
-        style="background-image: url('http://buster.mbkip3ms9u-e92498n216kr.p.temp-site.link/wp-content/uploads/2017/12/slider-bg2.jpg?id=160');">
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-back" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                class="active rounded-lg-3" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center shadow-lg">
-                    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Border hero with cropped image and shadows
+            <div class="carousel-item active carousel-show">
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+                    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 carousel-text">
+                        <h1 class="display-4 fw-bold lh-1">Under The Dome
                         </h1>
-                        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                            world’s
-                            most popular front-end open source toolkit, featuring Sass variables and mixins, responsive
-                            grid
-                            system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                        <p class="lead"><p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p></p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                            <a class="btn btn-primary btn-lg px-4 me-md-2 fw-bold readmore" href="./Assets/pages/readMore.html?id=1">READ  MORE</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg carousel-image">
                         <img class="rounded-lg-3"
-                            src="http://buster.mbkip3ms9u-e92498n216kr.p.temp-site.link/wp-content/uploads/2018/11/rWQVj6Z8kPdsbt7XPjVBCltxq90.jpg"
+                            src="https://static.tvmaze.com/uploads/images/original_untouched/81/202627.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-show">
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+                    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 carousel-text">
+                        <h1 class="display-4 fw-bold lh-1">Person of Interest
+                        </h1>
+                        <p class="lead"><p>You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered \"irrelevant\". They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.</p></p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                            <a class="btn btn-primary btn-lg px-4 me-md-2 fw-bold readmore" href="./Assets/pages/readMore.html?id=2">READ  MORE</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg carousel-image">
+                        <img class="rounded-lg-3"
+                            src="https://static.tvmaze.com/uploads/images/original_untouched/163/407679.jpg"
                             alt="" width="720">
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center shadow-lg">
-                    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Border hero with cropped image and shadows
+            <div class="carousel-item carousel-show">
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+                    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 carousel-text">
+                        <h1 class="display-4 fw-bold lh-1">Bitten
                         </h1>
-                        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                            world’s
-                            most popular front-end open source toolkit, featuring Sass variables and mixins, responsive
-                            grid
-                            system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                        <p class="lead"><p>Based on the critically acclaimed series of novels from Kelley Armstrong. Set in Toronto and upper New York State, <b>Bitten</b> follows the adventures of 28-year-old Elena Michaels, the world's only female werewolf. An orphan, Elena thought she finally found her \"happily ever after\" with her new love Clayton, until her life changed forever. With one small bite, the normal life she craved was taken away and she was left to survive life with the Pack.</p></p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                            <a class="btn btn-primary btn-lg px-4 me-md-2 fw-bold readmore" href="./Assets/pages/readMore.html?id=3">READ  MORE</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg carousel-image">
                         <img class="rounded-lg-3"
-                            src="http://buster.mbkip3ms9u-e92498n216kr.p.temp-site.link/wp-content/uploads/2018/11/rWQVj6Z8kPdsbt7XPjVBCltxq90.jpg"
+                            src="https://static.tvmaze.com/uploads/images/original_untouched/0/15.jpg"
                             alt="" width="720">
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center shadow-lg">
-                    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Border hero with cropped image and shadows
+            <div class="carousel-item carousel-show">
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+                    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 carousel-text">
+                        <h1 class="display-4 fw-bold lh-1">Arrow
                         </h1>
-                        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                            world’s
-                            most popular front-end open source toolkit, featuring Sass variables and mixins, responsive
-                            grid
-                            system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                        <p class="lead"><p>After a violent shipwreck, billionaire playboy Oliver Queen was missing and presumed dead for five years before being discovered alive on a remote island in the Pacific. He returned home to Starling City, welcomed by his devoted mother Moira, beloved sister Thea and former flame Laurel Lance. With the aid of his trusted chauffeur/bodyguard John Diggle, the computer-hacking skills of Felicity Smoak and the occasional, reluctant assistance of former police detective, now beat cop, Quentin Lance, Oliver has been waging a one-man war on crime.</p></p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                            <a class="btn btn-primary btn-lg px-4 me-md-2 fw-bold readmore" href="./Assets/pages/readMore.html?id=4">READ  MORE</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg carousel-image">
                         <img class="rounded-lg-3"
-                            src="http://buster.mbkip3ms9u-e92498n216kr.p.temp-site.link/wp-content/uploads/2018/11/rWQVj6Z8kPdsbt7XPjVBCltxq90.jpg"
-                            alt="" width="720">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center shadow-lg">
-                    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Border hero with cropped image and shadows
-                        </h1>
-                        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                            world’s
-                            most popular front-end open source toolkit, featuring Sass variables and mixins, responsive
-                            grid
-                            system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                        <img class="rounded-lg-3"
-                            src="http://buster.mbkip3ms9u-e92498n216kr.p.temp-site.link/wp-content/uploads/2018/11/rWQVj6Z8kPdsbt7XPjVBCltxq90.jpg"
+                            src="https://static.tvmaze.com/uploads/images/original_untouched/143/358967.jpg"
                             alt="" width="720">
                     </div>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <script defer src="Assets/js/script.js"></script>
 </body>
 </html>
